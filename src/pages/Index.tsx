@@ -182,11 +182,11 @@ const Index = () => {
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-dm-serif font-bold text-deep-plum mb-6">
               Read. Dream. Win.
             </h2>
-            <p className="text-lg md:text-xl text-deep-plum/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-deep-plum/80 mb-8 max-w-2xl mx-auto animate-fade-in-up animate-delay-200">
               Discover enchanting folktales from around the world. Each purchase enters you into our monthly raffle 
               for amazing prizes while building your family's digital library.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-deep-plum/70">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-deep-plum/70 animate-fade-in-up animate-delay-300">
               <div className="flex items-center gap-2">
                 <Book className="w-4 h-4" />
                 <span>12 Unique Folktale Bundles</span>
@@ -208,10 +208,10 @@ const Index = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-dm-serif font-bold text-deep-plum mb-4">
+            <h3 className="text-3xl md:text-4xl font-dm-serif font-bold text-deep-plum mb-4 animate-fade-in-up">
               Choose Your Adventure
             </h3>
-            <p className="text-lg text-deep-plum/70 max-w-2xl mx-auto">
+            <p className="text-lg text-deep-plum/70 max-w-2xl mx-auto animate-fade-in-up animate-delay-100">
               Each bundle contains beautifully illustrated stories passed down through generations
             </p>
           </div>
@@ -284,20 +284,20 @@ const Index = () => {
       <section className="py-16 bg-gradient-to-r from-deep-plum/5 to-warm-gold/10">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-3xl md:text-4xl font-dm-serif font-bold text-deep-plum mb-6">
+            <h3 className="text-3xl md:text-4xl font-dm-serif font-bold text-deep-plum mb-6 animate-fade-in-up">
               This Month's Prize
             </h3>
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-warm-gold/20">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-warm-gold/20 animate-fade-in-up animate-delay-200">
               <div className="w-20 h-20 bg-gradient-to-br from-warm-gold to-warm-gold/70 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Gift className="w-10 h-10 text-white" />
               </div>
               <h4 className="text-2xl font-dm-serif font-bold text-deep-plum mb-3">
                 iPad Pro 12.9" + Apple Pencil
               </h4>
-              <p className="text-deep-plum/70 mb-6">
+              <p className="text-deep-plum/70 mb-6 animate-fade-in-up animate-delay-300">
                 Perfect for digital reading and creative storytelling. Winner announced on the last day of each month.
               </p>
-              <div className="text-sm text-deep-plum/60">
+              <div className="text-sm text-deep-plum/60 animate-fade-in-up animate-delay-400">
                 <strong>73 entries</strong> so far this month • Draw at 100 entries
               </div>
             </div>

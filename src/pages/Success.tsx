@@ -64,12 +64,12 @@ const Success = () => {
             Purchase Successful!
           </h1>
 
-          <p className="text-lg text-deep-plum/70 mb-8 animate-fade-in-up animate-delay-100">
+          <p className="text-lg text-deep-plum/70 mb-8 animate-fade-in-up animate-delay-200">
             Thank you for your purchase! Your folktale bundle is ready to read, and you've been entered into this month's raffle.
           </p>
 
           {/* Raffle Ticket Card */}
-          <Card className="mb-8 bg-gradient-to-br from-warm-gold/10 to-warm-gold/20 border-warm-gold/30 animate-fade-in-up animate-delay-200">
+          <Card className="mb-8 bg-gradient-to-br from-warm-gold/10 to-warm-gold/20 border-warm-gold/30 animate-fade-in-up animate-delay-300">
             <CardContent className="p-8">
               <div className="flex items-center justify-center mb-4">
                 <Ticket className="w-8 h-8 text-warm-gold mr-3" />
@@ -94,7 +94,7 @@ const Success = () => {
           </Card>
 
           {/* Current Prize Info */}
-          <Card className="mb-8 animate-fade-in-up animate-delay-300">
+          <Card className="mb-8 animate-fade-in-up animate-delay-400">
             <CardContent className="p-8">
               <div className="flex items-center justify-center mb-4">
                 <Gift className="w-8 h-8 text-warm-gold mr-3" />
@@ -116,7 +116,7 @@ const Success = () => {
                 {currentPrize.name}
               </h4>
               
-              <p className="text-deep-plum/70 mb-4">
+              <p className="text-deep-plum/70 mb-4 animate-fade-in-up animate-delay-500">
                 {currentPrize.description}
               </p>
               
@@ -169,11 +169,11 @@ const Success = () => {
           </div>
 
           {/* Additional Info */}
-          <div className="mt-12 p-6 bg-deep-plum/5 rounded-lg animate-fade-in-up animate-delay-500">
+          <div className="mt-12 p-6 bg-deep-plum/5 rounded-lg animate-fade-in-up animate-delay-600">
             <h4 className="font-dm-serif font-bold text-lg text-deep-plum mb-3">
               What happens next?
             </h4>
-            <div className="text-left space-y-2 text-sm text-deep-plum/70">
+            <div className="text-left space-y-2 text-sm text-deep-plum/70 animate-fade-in-up animate-delay-700">
               <p>• Your folktale bundle has been added to your digital library</p>
               <p>• You'll receive an email confirmation with your ticket details</p>
               <p>• Winner will be announced on {currentPrize.drawDate}</p>
