@@ -13,7 +13,8 @@ const folktales = [
     description: "A beautiful tale from ancient Persia about a princess who could speak to animals",
     origin: "Persian",
     pages: 24,
-    age: "5-12"
+    age: "5-12",
+    image: "photo-1472396961693-142e6e269027"
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const folktales = [
     description: "Japanese story of a young boy who discovers a magical forest filled with musical trees",
     origin: "Japanese",
     pages: 18,
-    age: "4-10"
+    age: "4-10",
+    image: "photo-1500673922987-e212871fec22"
   },
   {
     id: 3,
@@ -29,7 +31,8 @@ const folktales = [
     description: "Brazilian folktale about a magical cat that brings good fortune to kind-hearted children",
     origin: "Brazilian",
     pages: 22,
-    age: "6-14"
+    age: "6-14",
+    image: "photo-1535268647677-300dbf3d78d1"
   },
   {
     id: 4,
@@ -37,7 +40,8 @@ const folktales = [
     description: "Celtic legend of a baker who makes bread from moonbeams for hungry travelers",
     origin: "Celtic",
     pages: 20,
-    age: "5-11"
+    age: "5-11",
+    image: "photo-1506744038136-46273834b3fb"
   },
   {
     id: 5,
@@ -45,7 +49,8 @@ const folktales = [
     description: "African tale about shadows that come alive to teach children about friendship",
     origin: "African",
     pages: 26,
-    age: "7-13"
+    age: "7-13",
+    image: "photo-1501854140801-50d01698950b"
   },
   {
     id: 6,
@@ -53,7 +58,8 @@ const folktales = [
     description: "Nordic saga of brave siblings climbing a mountain made entirely of crystals",
     origin: "Nordic",
     pages: 28,
-    age: "8-15"
+    age: "8-15",
+    image: "photo-1615729947596-a598e5de0ab3"
   },
   {
     id: 7,
@@ -61,7 +67,8 @@ const folktales = [
     description: "Native American story about a river that grants wishes to those pure of heart",
     origin: "Native American",
     pages: 19,
-    age: "5-12"
+    age: "5-12",
+    image: "photo-1506744038136-46273834b3fb"
   },
   {
     id: 8,
@@ -69,7 +76,8 @@ const folktales = [
     description: "Chinese legend of a girl who weaves stories into the night sky for all to see",
     origin: "Chinese",
     pages: 25,
-    age: "6-14"
+    age: "6-14",
+    image: "photo-1500673922987-e212871fec22"
   },
   {
     id: 9,
@@ -77,7 +85,8 @@ const folktales = [
     description: "Indian tale about a humble servant who discovers they possess royal wisdom",
     origin: "Indian",
     pages: 23,
-    age: "7-13"
+    age: "7-13",
+    image: "photo-1517022812141-23620dba5c23"
   },
   {
     id: 10,
@@ -85,7 +94,8 @@ const folktales = [
     description: "Polynesian story of shells that carry messages between distant islands",
     origin: "Polynesian",
     pages: 21,
-    age: "5-11"
+    age: "5-11",
+    image: "photo-1518877593221-1f28583780b4"
   },
   {
     id: 11,
@@ -93,7 +103,8 @@ const folktales = [
     description: "European fairy tale about a gardener who grows plants from different time periods",
     origin: "European",
     pages: 27,
-    age: "8-15"
+    age: "8-15",
+    image: "photo-1615729947596-a598e5de0ab3"
   },
   {
     id: 12,
@@ -101,7 +112,8 @@ const folktales = [
     description: "Middle Eastern story of a merchant who trades in hopes and dreams",
     origin: "Middle Eastern",
     pages: 24,
-    age: "6-14"
+    age: "6-14",
+    image: "photo-1472396961693-142e6e269027"
   }
 ];
 
@@ -212,8 +224,12 @@ const Index = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardContent className="p-6">
-                  <div className="aspect-[3/4] bg-gradient-to-br from-warm-gold/20 to-deep-plum/20 rounded-lg mb-4 flex items-center justify-center">
-                    <Book className="w-12 h-12 text-deep-plum/40" />
+                  <div className="aspect-[3/4] bg-gradient-to-br from-warm-gold/20 to-deep-plum/20 rounded-lg mb-4 overflow-hidden">
+                    <img 
+                      src={`https://images.unsplash.com/${story.image}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80`}
+                      alt={story.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
                   </div>
                   
                   <Badge variant="outline" className="mb-3 text-xs border-warm-gold/30 text-deep-plum">

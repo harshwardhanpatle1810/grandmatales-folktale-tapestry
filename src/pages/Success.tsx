@@ -103,6 +103,15 @@ const Success = () => {
                 </h3>
               </div>
               
+              {/* Prize Image */}
+              <div className="w-32 h-32 mx-auto mb-6 rounded-lg overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                  alt="iPad Pro Prize"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
               <h4 className="text-xl font-bold text-deep-plum mb-2">
                 {currentPrize.name}
               </h4>
